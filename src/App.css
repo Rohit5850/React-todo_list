@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todo_container {
+  background: #855afd;
+  height: 100vh;
+}
+.todo_main_box {
+  width: 25%;
+  margin: 0 auto;
+  border: 1px solid;
+  min-height: 140px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #1c1a42;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.todo_main_box h1 {
+  color: white;
+  font-size: 28px;
+}
+
+.todo_main_box form input {
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  width: 300px;
+  font-size: 18px;
+
+  border: 1px solid #855afd;
+}
+.todo_main_box .form_btn {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #855afd;
+  background: #855afd;
+  color: white;
+  cursor: pointer;
+}
+
+.todo_main_box form {
+  margin-top: 25px;
+}
+.todo_app {
+  position: relative;
+}
+
+.Todo_Data {
+  width: 396px;
+  background: #855afd;
+  margin: 0 auto;
+  border: 1px solid #855afd;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  padding-right: 70px;
+}
+
+.option_icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.option_icon svg {
+  padding: 6px;
+  cursor: pointer;
 }
