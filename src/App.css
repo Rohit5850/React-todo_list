@@ -46,6 +46,7 @@
 .todo_container {
   background: #855afd;
   height: 100vh;
+  position: relative; 
 }
 .todo_main_box {
   width: 25%;
@@ -58,7 +59,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%,-50%);
 }
 
 .todo_main_box h1 {
@@ -88,7 +89,7 @@
   margin-top: 25px;
 }
 .todo_app {
-  position: relative;
+  /* position: relative;   */
 }
 
 .Todo_Data {
@@ -115,4 +116,9 @@
 .option_icon svg {
   padding: 6px;
   cursor: pointer;
+}
+
+.error {
+  color: red;
+  padding: 12px;
 }
